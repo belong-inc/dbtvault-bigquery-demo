@@ -129,7 +129,7 @@ hashed_columns:
 ```
 
 ### 4. Set up vault
-In this demo, we create hubs, links, and satelites as vault.
+In this demo, we create hubs, links, and satellites as vault.
 
 Create `vault` dir under `models` and put related contents.
 
@@ -149,7 +149,7 @@ Example: h_customer.sql
 ```
 
 #### 4.2 Links
-Links are association of business objects like Hubs or Satelites. Create `link` dir under `models/vault`. Put SQLs for links.
+Links are association of business objects like Hubs or Satellites. Create `link` dir under `models/vault`. Put SQLs for links.
 
 Example: l_customer_order.sql
 ```sql
