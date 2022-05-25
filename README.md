@@ -9,11 +9,21 @@ This demo is for people who more familiar with BigQuery, and try dbtvault as the
 # Getting Started dbtvault
 
 ## Prerequisite
+
 To try dbtvault, it is good idea to go through [dbt tutorial](https://docs.getdbt.com/tutorial/learning-more/getting-started-dbt-core) fist because BigQuery connectivity and data will be all set after completing the tutorial.
 
 If you are new to dbt itself, good to go through [official docs](https://docs.getdbt.com/docs/introduction) as well.
 
-## Prepare BigQuery Access
+### Install dbt 
+As written in the dbt tutorial, installation can be done by following [instruction](https://docs.getdbt.com/dbt-cli/install/pip).
+
+In this repository, [Python pip based installation](https://docs.getdbt.com/dbt-cli/install/pip) is available by using included resources. Please use Python 3.8 or above.
+
+1. Setup venv `python -m venv venv`
+2. Activate `source ./venv/bin/activate`
+3. Install dependencies `pip install -r requirements.txt`
+
+### Prepare BigQuery Access
 BigQuery accessibility is requied before running this demo.
 
 1. Create a Dataset in BigQuery
@@ -27,7 +37,7 @@ A [dbt profile](https://docs.getdbt.com/dbt-cli/configure-your-profile) should b
 The profile will be created when a new project is created via `dbt init` command. If you would like try dbtvault with just cloning this repository, add following config to your profile in `~/.dbt/profiles.yml`
 
 ```yaml
-dbtvault-bigquery-demo:
+dbtvault_bigquery_demo:
   outputs:
     dev:
       dataset: YOUR_DATASET
