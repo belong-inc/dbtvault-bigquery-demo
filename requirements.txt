@@ -47,7 +47,7 @@ python-slugify==6.1.2
 pytimeparse==1.1.8
 pytz==2022.1
 PyYAML==6.0
-requests==2.27.1
+requests==2.31.0
 rsa==4.8
 six==1.16.0
 sqlparse==0.4.2
